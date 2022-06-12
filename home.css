@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap');
 
+::-webkit-scrollbar {
+    width: 8px;
+    overflow-y: overlay;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: pink;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:rgb(36, 204, 204);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(31, 171, 171);
+    border: 50%;
+  }
+
 ::-moz-selection {
     background-color: purple; 
     color: orange; 
@@ -14,10 +35,10 @@
     margin: 0;
 }
 body{
-    background-color:orange;
     font-family: 'Roboto', sans-serif;
 
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background: repeating-linear-gradient(
       -45deg,
       orange 0px,
@@ -26,6 +47,7 @@ body{
       purple 80px
     );
 }
+
 .intro {
     text-align: center;
     color: white;
@@ -92,17 +114,22 @@ outline: none;
         padding-left: 20px;
     }
 }
-.navbar ul li:hover{
+.navbar ul .ho:hover{
     transition-duration: 0.5s;
     opacity: 0.75;
-}
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+
 #innavdesc{
     color: white;
     background-color: red;
     text-align: center;
 }
 .desc{
-    margin-top: 45px;
+    margin-top: 37px;
     color: white;
     text-align: center;
 }
@@ -113,6 +140,10 @@ outline: none;
     list-style-type: none;
     font-size: 20px;
 }
+.desc ul li {
+    font-size: 21px;
+    font-weight: 500;
+}
 #pls{
-    margin-top: 20px;
+    margin-top: 7px;
 }

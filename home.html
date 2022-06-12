@@ -11,23 +11,34 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:orange;">
-        <h2 class="navbar-brand" ><strong>Blaze</strong></h2>
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" width="35" class="d-inline-block" alt="" style="margin-bottom:7px;">
+              <a class="navbar-brand ms-auto" href="#">
+          <h2 style="margin-top:10px;"><strong>Blaze</strong></h2>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+            <li class="nav-item ho">
               <a class="nav-link active" id="current" aria-current="page" href="home.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="store.html">Shop</a>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="store.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+              </a>
+              <ul class="dropdown-menu center-block custom" style=" background-color:pink;" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" style="color:brown;" href="./store/sweets.html">Süßigkeiten</a></li>
+                <li><a class="dropdown-item" style="color:brown;" href="./store/drinks.html">Getränke</a></li>
+                <li><a class="dropdown-item" style="color:brown;" href="./store/food.html">Essen</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ho">
                 <a class="nav-link active" href="faq.html">FAQ</a>
               </li>
-          </ul>
         </div>
     </nav>
 
@@ -45,6 +56,7 @@
         <li>Gauß Gymnasium Worms</li>
         <li>Rudi Stephan Gymnasium Worms</li>
         <li>Karmeliter Realschule</li>
+        <li>Nibelungen Realschule Worms</li>
       </ul>
       <h2 id="pls">Bitte beachte das wir 3.50€ Lieferkosten einnehmen</h2>
     </div>
