@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap');
+
+::-moz-selection {
+    background-color: purple; 
+    color: orange; 
+} 
+   ::selection { 
+    background-color: purple; 
+    color: orange; 
+}
+::-webkit-scrollbar {
+    width: 8px;
+    overflow-y: overlay;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: pink;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:rgb(36, 204, 204);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(31, 171, 171);
+    border: 50%;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:orange;
+    font-family: 'Roboto', sans-serif;
+
+    min-height: 100vh;
+    height: auto;
+    background: repeating-linear-gradient(
+      -45deg,
+      orange 0px,
+      orange 55px,
+      purple 55px,
+      purple 80px
+    );
+}
+
+
+
+nav .nav-item{
+   margin-right: 20px; 
+   font-size: 25px;
+}
+nav ul{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+
+.navbar-brand{
+    margin-left: 30px;;
+    font-size: 35px !important;
+}
+@media screen and (min-width:576px){
+    .navbar ul{
+        margin-left: 25px;
+        font-size: 20px;
+    }
+    .navbar ul li{
+        color: white;
+        margin-left: 10px;
+        text-align: center;
+    }
+}
+
+.navbar ul li{
+    display: block;
+    color: white;
+}
+.navbar ul li a{
+    margin:auto;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+padding: none;
+outline: none;
+}
+.navbar-toggler{
+    margin-right: 20px;
+}
+@media screen and (max-width:576px){
+    .navbar ul li{
+        padding-left: 20px;
+    }
+}
+.navbar ul .ho:hover{
+    transition-duration: 0.5s;
+    opacity: 0.75;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+
+#innavdesc{
+    color: white;
+    background-color: red;
+    text-align: center;
+}
+.desc{
+    margin-top: 45px;
+    color: white;
+    text-align: center;
+}
+.desc ul{
+    display: table; 
+    margin: 0 auto;
+    text-align: left;
+    list-style-type: none;
+    font-size: 20px;
+}
+.desc ul li {
+    font-size: 20px;
+    font-weight: 500;
+}
+#faq{
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+.customize-accordion{
+    margin-bottom: 30px;
+}
